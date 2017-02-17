@@ -1,0 +1,237 @@
+
+@media(min-width: 1600px){
+.container {
+    width: 1550px;
+}
+}
+
+.item {
+    width: 31%;
+    height: 33.3333%;
+    display: inline-block;
+    background-color: #f5f5f5;
+    border-radius: 7px;
+    margin: 1% 1% 1% 1%;
+    border: 1px solid transparent;
+    border-color: #ddd;
+}
+
+.sensors {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 0 0;
+}
+
+.images {
+    text-align: center;
+    margin: 4% 0 4% 0;   
+}
+
+.status {
+    background-color:white;
+    padding: 1% 1% 1% 1%;
+}
+
+.battery_percent {
+    display: inline-block;
+    padding: 0 6% 0 2%;
+}
+
+.status p {
+    margin: 0 0 0 2%;
+    padding: 1% 1% 1% 1%;
+    display: inline-block;
+}
+
+.status img {
+    float:right;
+    padding-right: 2%;
+}
+
+.social_login {
+    text-align: center;
+    margin: 2% 0 0 0;
+    display: inline-block;
+    width: 50%
+}
+
+.facebook {
+    width: 51%;
+    display: inline-block;
+    background-color: #3B5998;
+    border-color:  #3B5998;
+}
+
+.google {
+    width: 51%;
+    display: inline-block;
+    background-color: #D34836;
+    border-color: #D34836;
+}
+
+.facebook:hover {
+    background-color: #004499;
+}
+
+.google:hover {
+    background-color: #DC322F;
+    border-color: #D34836;
+}
+
+.centralize {
+    text-align: center;
+}
+
+
+/*/********************************   POP UP *********************************/
+
+
+
+#grey_background {
+    width:100%;
+    height:100%;
+    opacity:.93;
+    top:0;
+    left:0;
+    display:none;
+    position:fixed;
+    background-color:#313131;
+    overflow:auto
+}
+
+#popup {
+   position:absolute;
+    left:50%;
+    top:4%;
+    margin-left:-300px;
+    font-family:'Lato',sans-serif; 
+}
+
+#pop_up_form {
+    width:600px;
+    min-width:250px;
+    padding:10px 50px;
+    border:2px solid gray;
+    border-radius:10px;
+    font-family:"Lato";
+    background-color:white;
+    display: none;
+    text-align: center;
+}
+
+#marginBottom {
+    margin: 0 0 30px 0;
+}
+
+#sensor_name {
+    background-color:#f5f5f5;
+    font-family: "Lato";
+    padding:20px 35px;
+    margin:-10px -50px;
+    text-align:center;
+    border-radius:10px 10px 0 0
+}
+
+img#close {
+    position:absolute;
+    right:-14px;
+    top:-14px;
+    cursor:pointer;
+    height:32px;
+}
+
+#pop_up_form h5 {
+    margin: 30px 0 10px 0;
+    font-family:"Lato";
+    font-size: 17px;
+}
+
+#location_select {
+    width: 45%;
+    margin-left: 2%;
+    font-family:"Lato";
+}
+
+.locationSelectDiv {
+    width:82%;
+    padding:10px;
+    border:1px solid #ccc;
+    padding-left:30px;
+    font-size:16px;
+    font-family:"Lato";
+    display: inline-block;
+}
+
+#locationImg {
+    height: 75%;
+    margin-left: 5%;
+    margin-right: 6%;
+}
+
+#txtSelectedLocation {
+    display: none;
+}
+
+#sensor_name {
+    background-color:#f5f5f5;
+    font-family: "Lato";
+    padding:20px 35px;
+    margin:-10px -50px;
+    text-align:center;
+    border-radius:10px 10px 0 0
+}
+
+input[class=input-text] {
+    width:82%;
+    padding:10px;
+    border:1px solid #ccc;
+    padding-left:40px;
+    font-size:16px;
+    font-family:"Lato";
+}
+
+textarea {
+    width:82%;
+    height:95px;
+    padding:10px;
+    resize:none;
+    border:1px solid #ccc;
+    padding-left:40px;
+    font-size:16px;
+    font-family:"Lato";
+}
+
+#submit {
+    text-decoration:none;
+    width:100%;
+    text-align:center;
+    display:block;
+    background-color:#FFBC00;
+    color:#fff;
+    border:1px solid #FFCB00;
+    padding:10px 0;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px;
+    margin-top: 30px;
+}
+
+#phone {
+   display: inline-block;
+}
+
+#forAll {
+    display: inline-block;
+}
+
+/*button {
+width:10%;
+height:45px;
+border-radius:3px;
+background-color:#3B5998;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px;
+cursor:pointer
+}*/
+
