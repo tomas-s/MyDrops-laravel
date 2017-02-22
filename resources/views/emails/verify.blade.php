@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <h2>Verify Your Email Address</h2>
 
-        <div>
-            Thanks for creating an account with the verification demo app.
+        <h2>Verify Your Email Address</h2> <br/>
+
+            Thanks for creating an account with the verification our app.
             Please follow the link below to verify your email address
-            {{ URL::to('register/verify/' . $user->confirmation_code) }}.<br/>
+            {{ URL::to('register/verify/' . $confirmation_code) }}.<br/>
 
-        </div>
-
-    </body>
-</html>

@@ -11,7 +11,9 @@ use Auth;
 use App\Http\Controllers\MyDropsController;
 
 class DataController extends Controller {
-
+/*
+ * TODO: dorobit user_id, aby sa dotiahlo z aktualneho uzivatela
+ */
     /**
      * Create a new controller instance.
      *
@@ -28,13 +30,13 @@ class DataController extends Controller {
      */
     public function postData(Request $request) {
 
-        
+
         if(!(DataController::validateData($request))){
             return "Invalid data";
         }
         
-         
-         
+
+
         
         $sensorId = $request->input('DeviceID');
         $results = DB::select('select * from sensors where sensor_id = ?', array($sensorId));
@@ -45,14 +47,14 @@ class DataController extends Controller {
         } else {
             SensorController::updateSensor($request);
             return "Device was updated";
-        } 
+        }
     }
     
     public static function validateData(Request $request) {
         if ($request->input('BatteryLife') < 0 || $request->input('BatteryLife') > 100){
             return false;
         }
-        if ($request->input('State') < 1 || $request->input('State') > 2){
+        if ($request->input('State') < 0 || $request->input('State') > 2){
             return false;
         }
         return true;

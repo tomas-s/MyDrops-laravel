@@ -58,12 +58,25 @@ class MyDropsController extends Controller {
     
     public function sendConfirmationEmail (){
         $user = Auth::user();
-        Mail::send('emails.verify', ['user' => $user], function($message) use ($user) {
+
+    //test
+    echo $user;
+
+
+
+        /*Mail::send('emails.verify', ['user' => $user], function($message) use ($user) {
                     $message->to($user->email, $user->name)
                             ->subject('Verify your email address');
                 });
+        Alert::success('Success', 'Email was send');*/
+        Mail::send('emails.verify', ["user" => $user->name, "confirmation_code" => $user->confirmation_code], function ($message) {
+            //$message->from('us@example.com', 'Laravel');
+            $user = Auth::user();
+            $message->to($user->email, $user->name)->subject("Activate account!");
+        });
         Alert::success('Success', 'Email was send');
-        return view('confirmEmail');
+        /*return view('confirmEmail');*/
+
     }
 
 }

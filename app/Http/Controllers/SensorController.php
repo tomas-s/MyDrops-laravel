@@ -25,7 +25,7 @@ class SensorController extends Controller {
         $sensor = new Sensor;
         $sensor->sensor_id = $request->input('DeviceID');
         $sensor->state = $request->input('State');
-        $sensor->user_id = $request->input('UserEmail');
+       // $sensor->user_id = $request->input('UserEmail');
         $sensor->battery = $request->input('BatteryLife');
         $sensor->save();
     }

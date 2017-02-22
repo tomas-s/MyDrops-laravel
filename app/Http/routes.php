@@ -10,10 +10,10 @@
   | and give it the controller to call when that URI is requested.
   |
  */
-
+/*
 Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Route::post('newdata','DataController@postData');
 Route::get('test',  'NotificationController@test');
@@ -61,7 +61,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('changeSensorData','SensorController@formUpdateSensor');
 
     Route::get('/', function () {
-        echo"Ahoj svet";
-        //return view('welcome');
+        return view('welcome');
     });
 });
